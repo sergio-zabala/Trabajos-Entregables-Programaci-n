@@ -5,6 +5,16 @@ mostrarlos en el navegador (pueden darle formato
 de card)*/
 
 let card = document.getElementById("cards")
+const imagenes = [
+    "./imagenes/paras.webp",
+    "./imagenes/parasect.webp",
+    "./imagenes/venonat.webp",
+    "./imagenes/venomoth.jpeg",
+    "./imagenes/diglett.png",
+    "./imagenes/dugtrio.png",
+    "./imagenes/meowth.png",
+    "./imagenes/persian.png"
+];
 
 fetch("https://pokeapi.co/api/v2/pokemon?limit=8&offset=45")
 .then(resp => resp.json())
@@ -20,13 +30,3 @@ fetch("https://pokeapi.co/api/v2/pokemon?limit=8&offset=45")
 })
 .catch(err => console.log(err));
 
-const imagenes = [
-    "./imagenes/paras.webp",
-    "./imagenes/parasect.webp",
-    "./imagenes/venonat.webp",
-    "./imagenes/venomoth.jpeg",
-    "./imagenes/diglett.png",
-    "./imagenes/dugtrio.png",
-    "./imagenes/meowth.png",
-    "./imagenes/persian.png"
-];
